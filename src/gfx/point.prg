@@ -20,6 +20,8 @@ METHOD Array( xArg ) OPERATOR "[]"
 METHOD toString( )
 METHOD Distance( xArg1, xArg2, xArg3, xArg4 )
 METHOD DistanceCalc( aArg )
+METHOD nTop( nVal ) SETGET
+METHOD nLeft( nVal ) SETGET
 ENDCLASS 
 
 METHOD new( x, y ) CLASS Point
@@ -234,3 +236,22 @@ ELSE
 ENDIF
 RETURN nDist
 
+METHOD nTop( nVal ) CLASS Point
+IF nVal != NIL
+   IF HB_ISNUMERIC( nVal )
+      ::y := nVal
+   ELSE
+      Eval( ErrorBlock(), GenError( nVal, "POINT" ) )
+   ENDIF 
+ENDIF
+RETURN ::y
+
+METHOD nLeft( nVal ) CLASS Point
+IF nVal != NIL
+   IF HB_ISNUMERIC( nVal )
+      ::x := nVal
+   ELSE
+      Eval( ErrorBlock(), GenError( nVal, "POINT" ) )
+   ENDIF 
+ENDIF
+RETURN ::x
