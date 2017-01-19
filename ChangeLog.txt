@@ -1,0 +1,31 @@
+/*
+ * $Id$
+ */
+
+2017-01-13 21:37 UTC+0000 Oaprendiz (jorgenunes5 gmail.com)
+  + ChangeLog.txt
+
+/* Read doc/howtorep.txt and use this format for entry headers:
+   YYYY-MM-DD HH:MM UTC[-|+]hhmm Your Full Name (your_email address)
+   2013-12-31 13:59 UTC+0100 Foo Bar (foo.bar foobar.org)
+   See copyright/license at the end of the file.
+   Encoding: UTF-8 (No BOM)  Notation (in 5th position):
+     * Change, ! Fix, % Optimization, + Addition, - Removal, ; Comment
+ */
+
+2014-04-03 14:26 UTC+0200 Przemyslaw Czerpak (druzus/at/poczta.onet.pl)
+  * contrib/hbnetio/netiosrv.c
+    * fully consume RPC messages even if RPC is disabled. It allows to
+      continue client connection in such case and process next messages.
+
+
+/*
+   This work is licensed under the Creative Commons Attribution-ShareAlike
+   License. To view a copy of this license, visit
+   http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to
+   Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305,
+   USA.  A summary of the license and the full legal text is included
+   in file: COPYING.txt.  If you wish to distribute some or all of this
+   work under different terms, please contact respective author(s).
+   The license applies to all entries newer than 2009-04-28.
+ */
