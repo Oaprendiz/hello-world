@@ -6,6 +6,7 @@
 //
 
 #include "error.ch"
+
 #include "hbclass.ch"
 
 CREATE CLASS Point
